@@ -1,0 +1,29 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "example",
+  "identifier": [{
+  "resourceType": "ImagingStudy",
+  "id": "example",
+  
+  "identifier": [
+    {
+      "system": "urn:dicom:uid",
+      "value": "urn:oid:{{-model['0020000D']['Value'][0]-}}"
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/dicom"
+  },
+{{-StudyTimeString = (model['00080030']['Value'][0] | string.slice 0 2) + ':' + (model['00080030']['Value'][0] | string.slice 2 2) + ':' + (model['00080030']['Value'][0] | string.slice 4 2)-}}
+{{studyDateString = (model['00080020']['Value'][0] | string.slice 0 4) + '-' + (model['00080020']['Value'][0] | string.slice 4 2) + '-' + (model['00080020']['Value'][0] | string.slice 6 2)}}
+"started":"{{- date.parse studyDateString | date.to_string '%F'-}}T {{-StudyTimeString -}}",
+  "numberOfSeries": 1,
+  "numberOfInstances": 1,
+  "series": [
+    {
+     
+     
+    }
+  ]
+}
