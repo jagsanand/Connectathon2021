@@ -1,0 +1,47 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "ConnectathonExpectedOutput",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">CT Chest.  John Smith (MRN: 09236). Accession: W12342398. Performed: 2011-01-01. 3 series, 12 images.</div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:dicom:uid",
+      "value": "urn:oid:1.3.12.2.1107.5.1.4.54016.30000009051405354025000000035"
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/dicom"
+  },
+  "started": "2009-05-14T10:50:44",
+  "endpoing": "http://dicompacsweb.westeurope.cloudapp.azure.com/dicom-web/",
+  "numberOfSeries": 1,
+  "numberOfInstances": 1,
+  "series": [
+    {
+      "uid": "1.3.12.2.1107.5.1.4.54016.30000009051404464068700003418",
+      "number": 2,
+      "modality": {
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "code": "CT"
+      },
+      "description": "Topogram  0.6  T80s",
+      "numberOfInstances": 1,
+      "bodySite": {
+          "display": "LSPINE"
+      },
+      "instance": [
+        {
+          "uid": "1.3.12.2.1107.5.8.2.0.2009519182519663.20629",
+          "sopClass": {
+            "system": "urn:ietf:rfc:3986",
+            "code": "urn:oid:1.2.840.10008.5.1.4.1.1.2"
+          },
+          "number": 1
+        }
+      ]
+    }
+  ]
+}

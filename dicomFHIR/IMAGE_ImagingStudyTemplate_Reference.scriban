@@ -1,0 +1,44 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "connectathon_example",
+  "identifier": [
+    {
+	    "use": "official",
+      "system": "urn:dicom:uid",
+      "value": "urn:oid:{{PlaceHolder}}"
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/2557734"
+  },
+
+"started":"{{PlaceHolder}}",
+  "numberOfSeries": {{PlaceHolder}},
+  "numberOfInstances": {{PlaceHolder}},
+   "series": [
+    {
+      "uid": "{{PlaceHolder}}",
+      "number": {{PlaceHolder}},
+      "modality": {
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "code": "{{PlaceHolder}}"
+      },
+      "description": "{{PlaceHolder}}",
+      "numberOfInstances": {{PlaceHolder}},
+      "bodySite": {
+          "display": "{{PlaceHolder}}"
+      },
+      "instance": [
+        {
+          "uid": "{{PlaceHolder}}",
+          "sopClass": {
+            "system": "urn:ietf:rfc:3986",
+            "code": "urn:oid:{{PlaceHolder}}"
+          },
+          "number": {{PlaceHolder}}
+        }
+      ]
+    }
+  ]
+}
