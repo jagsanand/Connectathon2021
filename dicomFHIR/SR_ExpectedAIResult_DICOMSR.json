@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Connectathon_1_12092021",
+  "text": {
+    "status": "generated"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "DCM",
+      "value": "112039"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "RADLEX",
+        "code": "RID28668",
+        "display": "Volume"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/1918173"
+    
+  },
+  "effectivePeriod": {
+    "start": "2013-04-02T09:30:10+01:00"
+  },
+  "issued": "2013-04-03T15:30:10+01:00",
+  "valueQuantity": {
+    "value": 767.9,
+    "unit": "mm3",
+    "system": "UCUM",
+    "code": "cubic millimeter"
+  }
+  
+  
+}
